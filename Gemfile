@@ -14,6 +14,8 @@ gem "devise", "~> 3.2.3"
 gem 'paperclip', '~> 3.0'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'masonry-rails', '~> 0.2.0'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
 
 group :development, :test do
      gem 'sqlite3'
