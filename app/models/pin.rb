@@ -7,6 +7,7 @@ class Pin < ActiveRecord::Base
     :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
     :dropbox_options => {}
 		
+	validates_attachment_content_type :image, :content_type => %w(image/jpeg image/jpg image/png)
 	validates :image, presence: true
   validates :description, presence: true
 end
