@@ -11,7 +11,8 @@ class PinsController < ApplicationController
   end
 
   def new
-    @pin = current_user.pins.build
+   @pin = current_user.pins.build
+   
   end
 
   def edit
@@ -24,6 +25,7 @@ class PinsController < ApplicationController
     else
       render action: 'new'
     end
+    
   end
 
   def update
